@@ -1,0 +1,44 @@
+{
+	"name": "@mac-barrett/svelte-data-table",
+	"version": "0.1.0",
+	"description": "A simple Svelte Component that wraps around the DataTables API",
+	"keywords": [
+		"Svelte",
+		"SvelteKit",
+		"DataTables",
+		"datatables",
+		"tables"
+	],
+	"homepage": "https://github.com/Mac-Barrett/svelte-data-tables.git",
+	"bugs": {
+		"url": "https://github.com/Mac-Barrett/svelte-data-tables/issues"
+	},
+	"author": {
+		"name": "Mac Barrett",
+		"email": "maccabee.barrett3@gmail.com"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "svelte-kit sync && svelte-package",
+		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
+	},
+	"dependencies": {
+		"@sveltejs/package": "^1.0.2",
+		"datatables.net": "^1.10.20",
+		"datatables.net-dt": "^1.10.20",
+		"jquery": "^3.4.1",
+		"sirv-cli": "^0.4.4"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^1.0.0",
+		"@sveltejs/kit": "^1.0.0",
+		"@types/jquery": "^3.5.16",
+		"svelte": "^3.54.0",
+		"svelte-check": "^2.9.2",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0"
+	},
+	"type": "module"
+}
